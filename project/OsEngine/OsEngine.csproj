@@ -659,13 +659,30 @@
     <Compile Include="OsTrader\Panels\BotPanelChartUI.xaml.cs">
       <DependentUpon>BotPanelChartUI.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Robots\BearAbsorption\BearAbsorptionBot.cs" />
+    <Compile Include="Robots\BearAbsorption\BearAbsorptionBotUi.xaml.cs">
+      <DependentUpon>BearAbsorptionBotUi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Robots\BotAllTrades\BotAllTrades.cs" />
+    <Compile Include="Robots\BotArbitrage\BotArbitrage.cs" />
+    <Compile Include="Robots\BotExam\BotExam.cs" />
+    <Compile Include="Robots\BotExam\BotExamUi.xaml.cs">
+      <DependentUpon>BotExamUi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Robots\BotFactory.cs" />
+    <Compile Include="Robots\BotMarketDepth\BotMarketDepth.cs" />
     <Compile Include="Robots\CounterTrend\ClusterCountertrend.cs" />
     <Compile Include="Robots\Engines\CandleEngine.cs" />
     <Compile Include="Robots\Engines\ClusterEngine.cs" />
+    <Compile Include="Robots\HammerBot\ArbitrationHammerBot.cs" />
     <Compile Include="Robots\HammerBot\RobotHammer.cs" />
     <Compile Include="Robots\High Frequency\Fisher.cs" />
     <Compile Include="Robots\High Frequency\HighFrequencyTrader.cs" />
+    <Compile Include="Robots\IndicatorBot\BollingerAverageBot.cs" />
+    <Compile Include="Robots\IndicatorBot\BollingerAverageBotUi.xaml.cs">
+      <DependentUpon>BollingerAverageBotUi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Robots\IndicatorBot\MultipalIndicatorBot.cs" />
     <Compile Include="Robots\MarketMaker\PairTraderSimple.cs" />
     <Compile Include="Robots\MarketMaker\PairTraderSimpleUi.xaml.cs">
       <DependentUpon>PairTraderSimpleUi.xaml</DependentUpon>
@@ -1150,7 +1167,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Robots\BearAbsorption\BearAbsorptionBotUi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Robots\BotExam\BotExamUi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Robots\CounterTrend\StrategyBollingerUi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Robots\IndicatorBot\BollingerAverageBotUi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

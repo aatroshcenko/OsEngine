@@ -25,6 +25,11 @@ using OsEngine.Robots.OnScriptIndicators;
 using System.Runtime;
 using OsEngine.Robots.HammerBot;
 using OsEngine.Robots.Soldier;
+using OsEngine.Robots.BearAbsorption;
+using OsEngine.Robots.IndicatorBot;
+using OsEngine.Robots.BotMarketDepth;
+using OsEngine.Robots.BotAllTrades;
+using OsEngine.Robots.BotArbitrage;
 
 namespace OsEngine.Robots
 {
@@ -37,6 +42,15 @@ namespace OsEngine.Robots
         public static List<string> GetNamesStrategy()
         {
             List<string> result = new List<string>();
+
+            result.Add(nameof(BotExam.BotExam));
+            result.Add(nameof(BotArbitrage.BotArbitrage));
+            result.Add(nameof(BotAllTrades.BotAllTrades));
+            result.Add(nameof(BotMarketDepth.BotMarketDepth));
+            result.Add(nameof(BollingerAverageBot));
+            result.Add(nameof(MultipalIndicatorBot));
+            result.Add(nameof(BearAbsorptionBot));
+            result.Add(nameof(ArbitrationHammerBot));
             result.Add("SoldierBot");
             result.Add("HammerBot");
             result.Add("Fisher");
@@ -116,6 +130,38 @@ namespace OsEngine.Robots
                 return bot;
             }
 
+            if (nameClass == nameof(BotExam.BotExam))
+            {
+                bot = new BotExam.BotExam(name, startProgram);
+            }
+            if (nameClass == nameof(BotArbitrage.BotArbitrage))
+            {
+                bot = new BotArbitrage.BotArbitrage(name, startProgram);
+            }
+            if (nameClass == nameof(BotAllTrades.BotAllTrades))
+            {
+                bot = new BotAllTrades.BotAllTrades(name, startProgram);
+            }
+            if (nameClass == nameof(BotMarketDepth.BotMarketDepth))
+            {
+                bot = new BotMarketDepth.BotMarketDepth(name, startProgram);
+            }
+            if (nameClass == nameof(BollingerAverageBot))
+            {
+                bot = new BollingerAverageBot(name, startProgram);
+            }
+            if (nameClass == nameof(MultipalIndicatorBot))
+            {
+                bot = new MultipalIndicatorBot(name, startProgram);
+            }
+            if (nameClass == nameof(BearAbsorptionBot))
+            {
+                bot = new BearAbsorptionBot(name, startProgram);
+            }
+            if (nameClass == nameof(ArbitrationHammerBot))
+            {
+                bot = new ArbitrationHammerBot(name, startProgram);
+            }
             if (nameClass == "SoldierBot")
             {
                 bot = new SoldierBot(name, startProgram);

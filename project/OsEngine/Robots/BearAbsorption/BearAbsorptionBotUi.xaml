@@ -1,0 +1,40 @@
+﻿<Window x:Class="OsEngine.Robots.BearAbsorption.BearAbsorptionBotUi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OsEngine.Robots.BearAbsorption"
+        mc:Ignorable="d"
+        Title="BearAbsorptionBotUi" Height="400" Width="400" Style="{StaticResource WindowStyleNoResize}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Name="LableStop" Content="Stop" HorizontalContentAlignment="Right" Margin="10,0,10,0"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Name="LableProfit" Content="Profit" HorizontalContentAlignment="Right" Margin="10,0,10,0"></Label>
+        <Label Grid.Row="2" Grid.Column="0" Name="LableStopSleepage" Content="StopSleepage" HorizontalContentAlignment="Right" Margin="10,0,10,0"></Label>
+        <Label Grid.Row="3" Grid.Column="0" Name="LableProfitSleepage" Content="ProfitSleepage" HorizontalContentAlignment="Right" Margin="10,0,10,0"></Label>
+        <Label Grid.Row="4" Grid.Column="0" Name="LableVolume" Content="Volume" HorizontalContentAlignment="Right" Margin="10,0,10,0"></Label>
+        <Label Grid.Row="5" Grid.Column="0" Name="LableIsOn" Content="IsOn" HorizontalContentAlignment="Right" Margin="10,0,10,0"></Label>
+
+        <TextBox Grid.Row="0" Grid.Column="1" Name="TextBoxStop" Margin="10,0,10,0"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="TextBoxProfit" Margin="10,0,10,0"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="TextBoxStopSleepage" Margin="10,0,10,0"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="TextBoxProfitSleepage" Margin="10,0,10,0"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="TextBoxVolume" Margin="10,0,10,0"></TextBox>
+        <CheckBox Grid.Row="5" Grid.Column="1" Name="CheckBoxIsOn" Margin="10,0,0,0"></CheckBox>
+
+        <Button Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Name="ButtomSave" Content="Save" Margin="90,20,90,20" VerticalAlignment="Top" ></Button>
+    </Grid>
+</Window>
